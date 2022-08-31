@@ -17,6 +17,8 @@
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+  <link href="/xterm.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -31,7 +33,7 @@
         class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Home</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/terminal.html">Terminal</a></li>
       </ul>
     </div>
@@ -61,93 +63,19 @@
     </section>
     <hr class="m-0" />
     <hr class="m-0" />
-
-    <body>
-      <div class="container">
-        <h1 class="text-center my-5 fw-bold">Dashboard</h1>
-        <div class="row py-3">
-          <div class="col-12 col-lg-6">
-            <div class="card">
-              <div class="card-header text-center fw-bold">
-                Hosts
-                <div class="float-end">
-                </div>
-              </div>
-              <div class="card-body">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">PC</th>
-                      <th scope="col">NOME</th>
-                      <th scope="col">IP</th>
-                      <th scope="col"></th>
-                    </tr>
-                  </thead>
-                  <tbody class="table-group-divider">
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-laptop-code"></i>
-                      </td>
-                      <td>pc-edu</td>
-                      <td>192.168.0.10</td>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-laptop-code"></i>
-                      </td>
-                      <td>pc-geraldo</td>
-                      <td>192.168.0.205</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-laptop-code"></i>
-                      </td>
-                      <td>pc-servidor</td>
-                      <td>192.168.0.7</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 mt-3 mt-lg-0">
-            <div class="card card-times">
-              <div class="card-header text-center fw-bold">
-                IP da Rede
-                <div class="float-end">
-                </div>
-              </div>
-              <div class="card-body">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col"></th>
-                      <th scope="col"></th>
-                    </tr>
-                  </thead>
-                  <tbody class="table-group-divider">
-                    <tr>
-                      <td>
-                        <i class="fa-solid fa-globe"></i>
-                      </td>
-                      <td>IP da Rede</td>
-                      <td>192.168.0.1</td>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-
-              </div>
-              <div class="card-body"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    </body>
-
+    <div class="gradientCont">
+		<div class="mainCont">
+		<h2>Morpheus Web Terminal</h2>
+		<h3>Eduardo Fernando e Geraldo Souza</h3>
+		<div class="terminalCont">
+		<div id="terminalReslutsCont">
+		</div>
+		<form>
+		<input id="terminalTextInput" type="text" placeholder="Try typing hi or help..." autocomplete="off">
+		</form>
+		</div>
+		</div>
+	</div>
+ 
+  <script  src="/function.js"></script>
 </html>
